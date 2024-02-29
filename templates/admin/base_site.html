@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<div id="site-name"  style="text-align: center; margin: auto; max-width: 400px;">
+    <a href="{% url 'admin:index' %}" style="font-size: 24px; color: #fff;">Greencraft 관리자 로그인</a>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div id="content-main" style="max-width: 600px; margin: 20px auto; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); background-color: white; border-radius: 10px;">
+    <!-- 로그인 폼 및 기타 콘텐츠 -->
+</div>
+{% endblock %}
